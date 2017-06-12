@@ -1,0 +1,279 @@
+/* NAVI */
+
+.navbar,.navbar-default,.navbar-fixed-top{
+	background-color: rgba(255,255,255,.75);
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 0;
+	border: none;
+}
+
+.navbar,.navbar-default,.navbar-fixed-top  div{
+}
+
+ .navbar {
+  min-height: 30px;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 30px;
+  line-height: 25px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 5px;
+  padding: 3px 0px 0px 0px !important;
+}
+
+.navbar-default .navbar-toggle {
+	background-color: none;
+	border: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    line-height: 25px;
+  }
+}
+
+/* VIDEO BANNER */
+
+#video-background{ 
+  position: absolute;
+  height: auto;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 1;
+}
+
+#heading-text.container {
+  position: relative;
+  color: #ffffff;
+  z-index: 2; /* Show content above video */
+}
+
+/* CTA BUTTON STYLING */
+
+.btn-primary {
+	background-color: rgba(0,0,0,0);
+	border: 1px solid #fff;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+	border-radius: 0px;
+}
+
+.btn-style:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+/* HEADING BANNER */
+
+#home,#korea,#japan,#vietnam,#singapore,#spain {
+	background-size: cover;
+	width: auto;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.25);
+}
+
+#korea,#japan,#vietnam,#singapore,#spain {
+	height: 400px;
+}
+
+#home {
+	height: 600px;
+	padding-top: 180px; /* change to align text */
+	margin: 0;
+	position: relative;
+  overflow: hidden;
+}
+
+#korea {
+	background-image: url(img/korea/seoul1.jpg);
+}
+
+#japan {
+	background-image: url(img/japan/tokyo1.jpg);
+}
+
+#vietnam {
+	background-image: url(img/vietnam/hcmcity1.jpeg);
+}
+
+#singapore {
+	background-image: url(img/singapore/singapore1.jpg);
+	position: relative;
+}
+
+#spain {
+	background-image: url(img/spain/barcelona1.jpg);
+}
+
+.jumbotron {
+	margin: 0px;
+	padding-top: 80px;
+}
+
+.jumbotron h1 {
+	text-align: center;
+	font-size: 40px;
+	color: #fff;
+	margin-top: 80px;
+	text-transform: uppercase;
+}
+
+.jumbotron p{
+	color: #fff;
+	text-align: center;
+}
+
+/* HEADING TEXT-BUTTON STYLING */
+
+#home h1{
+	font-size: 48px;
+}
+
+/* LINK STYLING */
+
+.jumbotron a:hover {
+	text-decoration: none;
+}
+
+/* HOVER BOX */
+.hover-box {
+    position: relative;
+}
+
+.hover-box:hover .img {
+ 	opacity: 0.3;
+}
+
+.hover-box:hover .middle {
+ 	opacity: 0.8;
+}
+
+.middle {
+ 	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%)
+}
+
+.text {
+ 	background-color: #fff;
+ 	color: #000;
+	padding: 10px;
+	text-align: center;
+	font-size: 12px
+}
+
+.text p{
+	padding: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	border: 1px solid #000;
+	text-align: center;
+}
+
+/* RESPONSIVE HOVER TEXT */
+
+@media (min-width: 750px) {
+  .text, {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 750px) {
+  .text p {
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 970px) {
+  .text {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 970px) {
+  .text p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .travel h4{
+    font-size: 15px;
+  }
+}
+
+/* HOVER BOX LINK STYLE */
+.text a{
+	color:  #000;
+	text-decoration: none;
+}
+
+.text a:hover{
+	background-color: #7a7a7a;
+}
+
+/* IMG GALLERY */ 
+
+.img-gallery{
+	width: 1024;
+}
+
+#imgs {
+	padding-right: 0px;
+	padding-left: 0;
+}
+
+.img-all {
+	width: 100%;
+}
+
+.row {
+	margin: 0px;
+}
+
+/* TRAVEL HERE LINK */
+
+.travel h4{
+ 	text-align: center;
+}
+.travel a {
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	border: 0.5px solid #000;
+	padding: 10px 25px;
+}
+
+/* TRAVEL HERE HOVER EFFECT */
+
+.travel #plane{ 
+	display: none; 
+}
+
+.travel:hover #travel-here{ 
+	display: none; 
+}
+
+.travel:hover #plane{ 
+	display: inline; 
+}
